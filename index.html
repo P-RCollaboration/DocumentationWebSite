@@ -1,5 +1,31 @@
 <html>
-  <body>
-    <span>Yahoo<span>
-  </body>
+    <head>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script> -->
+        <script src="vue.js"></script>
+        <script src="https://p-rcollaboration.github.io/CoreComponents/src/libraries/vuejs2.boostraper.js"></script>
+        <script src="https://p-rcollaboration.github.io/CoreComponents/src/libraries/resolveDependencies.js"></script>
+    </head>
+    <body>
+        <div id="app">
+        </div>
+
+        <script>
+            //setup require dependency for components
+            Vue2Bootstraper.require = DependencyResolver;
+
+            //global register vue2bootstraper to Vue
+            Vue.use(Vue2Bootstraper);
+
+            //load boot component
+            new Vue(
+                {
+                    el: `#app`,
+                    template: `<app></app>`,
+                    components: {
+                        App: `remote:App.vue`
+                    }
+                }
+            );
+        </script>
+    </body>
 </html>
