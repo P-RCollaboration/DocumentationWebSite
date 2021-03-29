@@ -36,17 +36,50 @@
         <span class="main-accentheader-title">
             Quick start
         </span>
+        <span>
+            By tradition, first create a folder for the project
+        </span>
+        <div class="code-section">
+            <span>&gt; mkdir testfolder</span>
+            <span>&gt; cd testfolder</span>
+        </div>
+        <span>
+            You need static server. As instance I will be use package http-server from npm.
+            <br />All what you need it run command:
+        </span>
+        <div class="code-section">
+            > npm install http-server -g
+        </div>
+        <span>
+            After it you need create <b>index.html</b> file:
+        </span>
+        <iframe
+            src="https://pastebin.com/embed_iframe/SU7Lf8dD"
+            class="hello-world-example">
+        </iframe>
+        <span>
+            and create component file <b>App.vue</b>
+        </span>
+        <iframe
+            src="https://pastebin.com/embed_iframe/xffByPK2"
+            class="hello-world-example">
+        </iframe>
+        <span>
+            Final step, run static server:
+        </span>
+        <div class="code-section">
+            > http-server -a localhost -p 8080
+        </div>
+        <span>
+            Check it out in <a href="http://localhost:8080">browser</a>.
+        </span>
     </div>
 </template>
 
 <script>
 export default async function () {
     return {
-        name: `App`,
-        data() {
-            return {
-            }
-        },
+        name: `Introduction`,
         methods: {
         },
         components: {
@@ -59,5 +92,11 @@ export default async function () {
 .introduction-container {
     display: flex;
     flex-direction: column;
+}
+.hello-world-example {
+    border: none;
+    width: 100%;
+    height: 400px;
+    margin: 20px;
 }
 </style>

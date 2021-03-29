@@ -58,4 +58,12 @@ export default async function () {
     font-weight: bold;
     font-size: 1.5rem;
 }
+.code-section {
+    padding: 10px;
+    background: black;
+    color: white;
+    margin: 8px;
+    display: flex;
+    flex-direction: column;
+}
 </style>

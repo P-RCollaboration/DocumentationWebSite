@@ -40,7 +40,7 @@
                     template: `<app></app>`,
                     router,
                     components: {
-                        App: `remote:App.vue`
+                        App: () => Vue2Bootstraper.loadComponent(`App.vue`)
                     }
                 }
             );
