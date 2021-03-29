@@ -1,10 +1,14 @@
 <template>
-    <div class="app-container">
-        <app-menu>
-
-        </app-menu>
-        <div class="content-container">
-            
+    <div>
+        <div>
+            <span>Documentation for version 1.0</span>
+        </div>
+        <div class="app-container">
+            <app-menu>
+            </app-menu>
+            <div class="content-container">
+                <router-view></router-view>
+            </div>
         </div>
     </div>
 </template>
@@ -40,5 +44,18 @@ export default async function () {
 }
 .content-container {
     width: 800px;
+    padding-left: 30px;
+}
+.main-header-title {
+    font-weight: bold;
+    font-size: 1.8rem;   
+}
+.main-subheader-title {
+    font-size: 1.3rem;
+}
+.main-accentheader-title {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 </style>

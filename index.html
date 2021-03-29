@@ -1,9 +1,10 @@
 <html>
     <head>
-        <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script> -->
-        <script src="vue.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+        <!-- <script src="vue.js"></script> -->
         <script src="https://p-rcollaboration.github.io/CoreComponents/src/libraries/vuejs2.boostraper.js"></script>
         <script src="https://p-rcollaboration.github.io/CoreComponents/src/libraries/resolveDependencies.js"></script>
+        <script src="https://unpkg.com/vue-router@2.0.0/dist/vue-router.js"></script>
     </head>
     <body>
         <div id="app">
@@ -16,11 +17,28 @@
             //global register vue2bootstraper to Vue
             Vue.use(Vue2Bootstraper);
 
+            const router = new VueRouter(
+                {
+                    routes: [
+                        {
+                            path: `/`,
+                            alias: `/introduction`,
+                            component: () => Vue2Bootstraper.loadComponent(`Introduction.vue`)
+                        }/*,
+                        {
+                            path: '/bar',
+                            component: Bar
+                        }*/
+                    ]
+                }
+            );
+
             //load boot component
             new Vue(
                 {
                     el: `#app`,
                     template: `<app></app>`,
+                    router,
                     components: {
                         App: `remote:App.vue`
                     }

@@ -20,7 +20,7 @@
                 <div
                     v-for="(option, optionIndex) in group.options"
                     :key="optionIndex"
-                    @click="selectedItem = option">
+                    @click="selectItem(option)">
                     <span
                         :class="{ 'selected-item': selectedItem === option }">
                         {{ option.title }}
@@ -113,6 +113,11 @@ export default async function () {
                     }
                 ]
             }
+        },
+        methods: {
+            selectItem(option) {
+                this.selectedItem = option;
+            }
         }
     }
 }
@@ -133,7 +138,8 @@ export default async function () {
     flex: 1;
 }
 .menu-container {
-    margin: 10px;
+    margin-top: 10px;
+    margin-right: 40px;
     width: 140px;
 }
 .selected-item {
