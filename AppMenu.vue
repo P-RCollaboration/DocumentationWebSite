@@ -44,13 +44,16 @@ export default async function () {
                         opened: false,
                         options: [
                             {
-                                title: `Introduction`
+                                title: `Introduction`,
+                                link: `/introduction`
                             },
                             {
-                                title: `Install`
+                                title: `Install`,
+                                link: `/install`
                             },
                             {
-                                title: `Using CLI`
+                                title: `Using CLI`,
+                                link: `/usingcli`
                             },
                         ]
                     },
@@ -114,9 +117,23 @@ export default async function () {
                 ]
             }
         },
+        mounted() {
+            let path = location.hash.replace(`#`, ``);
+            if (path === `/`) path = `/introduction`;
+            
+            const option = this.groups.reduce((left, right) => left.concat(right.options), []).find(a => a.link === path);
+            if (!option) return;
+            
+            const group = this.groups.find(group => group.options.find(option => option === option));
+            if (!group) return;
+            
+            this.selectedItem = option;
+            group.opened = true;
+        },
         methods: {
             selectItem(option) {
                 this.selectedItem = option;
+                this.$router.push({ path: option.link });
             }
         }
     }

@@ -24,11 +24,11 @@
                             path: `/`,
                             alias: `/introduction`,
                             component: () => Vue2Bootstraper.loadComponent(`Introduction.vue`)
-                        }/*,
+                        },
                         {
-                            path: '/bar',
-                            component: Bar
-                        }*/
+                            path: '/install',
+                            component: () => Vue2Bootstraper.loadComponent(`Install.vue`)
+                        }
                     ]
                 }
             );
