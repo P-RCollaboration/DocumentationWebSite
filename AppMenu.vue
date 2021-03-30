@@ -55,6 +55,10 @@ export default async function () {
                                 title: `Using CLI`,
                                 link: `/usingcli`
                             },
+                            {
+                                title: `Loading components`,
+                                link: `/loadingcomponents`
+                            }                            
                         ]
                     },
                     {

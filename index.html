@@ -26,8 +26,12 @@
                             component: () => Vue2Bootstraper.loadComponent(`Introduction.vue`)
                         },
                         {
-                            path: '/install',
+                            path: `/install`,
                             component: () => Vue2Bootstraper.loadComponent(`Install.vue`)
+                        },
+                        {
+                            path: `/loadingcomponents`,
+                            component: () => Vue2Bootstraper.loadComponent(`LoadingComponents.vue`)
                         }
                     ]
                 }
