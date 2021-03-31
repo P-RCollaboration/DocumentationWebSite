@@ -66,4 +66,7 @@ export default async function () {
     display: flex;
     flex-direction: column;
 }
+.highlighted-text {
+    color: yellow;
+}
 </style>

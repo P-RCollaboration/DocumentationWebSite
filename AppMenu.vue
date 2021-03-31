@@ -32,113 +32,111 @@
 </template>
 
 <script>
-export default async function () {
-    return {
-        name: `AppMenu`,
-        data() {
-            return {
-                selectedItem: null,
-                groups: [
-                    {
-                        title: `Getting started`,
-                        opened: false,
-                        options: [
-                            {
-                                title: `Introduction`,
-                                link: `/introduction`
-                            },
-                            {
-                                title: `Install`,
-                                link: `/install`
-                            },
-                            {
-                                title: `Using CLI`,
-                                link: `/usingcli`
-                            },
-                            {
-                                title: `Loading components`,
-                                link: `/loadingcomponents`
-                            }                            
-                        ]
-                    },
-                    {
-                        title: `Components`,
-                        opened: false,
-                        options: [
-                            {
-                                title: `Button`
-                            },
-                            {
-                                title: `RadioButton`
-                            },
-                            {
-                                title: `FontIcon`
-                            },
-                            {
-                                title: `DropDown`
-                            },
-                            {
-                                title: `CheckBox`
-                            },
-                            {
-                                title: `CheckBoxTriState`
-                            },
-                            {
-                                title: `TextBox`
-                            },
-                            {
-                                title: `NumberBox`
-                            },
-                            {
-                                title: `TextArea`
-                            },
-                            {
-                                title: `Slider`
-                            },
-                        ]
-                    },
-                    {
-                        title: `Layouts`,
-                        opened: false,
-                        options: [
-                            {
-                                title: `ListBox`
-                            }
-                        ]
-                    },
-                    {
-                        title: `Validation`,
-                        opened: false,
-                        options: [
-                            {
-                                title: `Introduction`
-                            },
-                            {
-                                title: `ValidateHost`
-                            }
-                        ]
-                    }
-                ]
-            }
-        },
-        mounted() {
-            let path = location.hash.replace(`#`, ``);
-            if (path === `/`) path = `/introduction`;
-            
-            const option = this.groups.reduce((left, right) => left.concat(right.options), []).find(a => a.link === path);
-            if (!option) return;
-            
-            const group = this.groups.find(group => group.options.find(option => option === option));
-            if (!group) return;
-            
+export default {
+    name: `AppMenu`,
+    data() {
+        return {
+            selectedItem: null,
+            groups: [
+                {
+                    title: `Getting started`,
+                    opened: false,
+                    options: [
+                        {
+                            title: `Introduction`,
+                            link: `/introduction`
+                        },
+                        {
+                            title: `Install`,
+                            link: `/install`
+                        },
+                        {
+                            title: `Using CLI`,
+                            link: `/usingcli`
+                        },
+                        {
+                            title: `Loading components`,
+                            link: `/loadingcomponents`
+                        }                            
+                    ]
+                },
+                {
+                    title: `Components`,
+                    opened: false,
+                    options: [
+                        {
+                            title: `Button`
+                        },
+                        {
+                            title: `RadioButton`
+                        },
+                        {
+                            title: `FontIcon`
+                        },
+                        {
+                            title: `DropDown`
+                        },
+                        {
+                            title: `CheckBox`
+                        },
+                        {
+                            title: `CheckBoxTriState`
+                        },
+                        {
+                            title: `TextBox`
+                        },
+                        {
+                            title: `NumberBox`
+                        },
+                        {
+                            title: `TextArea`
+                        },
+                        {
+                            title: `Slider`
+                        },
+                    ]
+                },
+                {
+                    title: `Layouts`,
+                    opened: false,
+                    options: [
+                        {
+                            title: `ListBox`
+                        }
+                    ]
+                },
+                {
+                    title: `Validation`,
+                    opened: false,
+                    options: [
+                        {
+                            title: `Introduction`
+                        },
+                        {
+                            title: `ValidateHost`
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    mounted() {
+        let path = location.hash.replace(`#`, ``);
+        if (path === `/`) path = `/introduction`;
+        
+        const option = this.groups.reduce((left, right) => left.concat(right.options), []).find(a => a.link === path);
+        if (!option) return;
+        
+        const group = this.groups.find(group => group.options.find(option => option === option));
+        if (!group) return;
+        
+        this.selectedItem = option;
+        group.opened = true;
+    },
+    methods: {
+        selectItem(option) {
             this.selectedItem = option;
-            group.opened = true;
-        },
-        methods: {
-            selectItem(option) {
-                this.selectedItem = option;
-                this.$router.push({ path: option.link });
-            }
+            this.$router.push({ path: option.link });
         }
     }
 }
@@ -172,3 +170,4 @@ export default async function () {
     user-select: none;
 }
 </style>
+
