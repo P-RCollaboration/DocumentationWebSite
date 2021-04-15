@@ -19,7 +19,7 @@
             <br />
             Our goal tries to solve as many as possible issues related to Micro Frontends with a component set Provue.
             As a foundation, we decided to select the library Vue.js.
-            Single File Component that Vue.js suggest it our opition ideal fit for implement Micro Frontends because all parts - template, css, script and required dependencies defined in one file.
+            Single File Component that Vue.js suggest it our opinion ideal fit for implement Micro Frontends because all parts - template, css, script and required dependencies defined in one file.
             Components have flexible parent-children communication methods.
             Children's components can be lazy-loaded.
         </span>
