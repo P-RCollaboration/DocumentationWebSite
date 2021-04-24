@@ -7,19 +7,25 @@
             ProvueCLI is console application help you in development and deployment application.
         </span>
         <span class="main-accentheader-title">
+            Installation
+        </span>
+        <span>
+            You can download the latest version for your OS at <a href="https://github.com/P-RCollaboration/ProvueCLI/releases">this link</a>.
+        </span>
+        <span class="main-accentheader-title">
             Setup project
         </span>
         <span>
-            First of all you need setup folders - source folder, build folder and release folder.
+            First of all you need setup folders - source folder, build folder and release folder.<br />
             You can do it via command-line argument or <b>provue</b> file.
             It will be useful place <b>provue</b> file to root of project directory.
             Example settings in <b>provue</b> file:
         </span>
         <div class="code-section">
-            {
-                &quot;sourceFolder&quot;: &quot;src&quot;,
-                &quot;buildFolder&quot;: &quot;build&quot;,
-                &quot;releaseFolder&quot;: &quot;release&quot;
+            {<br />
+                &quot;sourceFolder&quot;: &quot;src&quot;,<br />
+                &quot;buildFolder&quot;: &quot;build&quot;,<br />
+                &quot;releaseFolder&quot;: &quot;release&quot;<br />
             }
         </div>
         <span class="main-accentheader-title">
