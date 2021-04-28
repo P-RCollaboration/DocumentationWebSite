@@ -15,8 +15,8 @@
 
 <script>
 export default async function () {
-    require.resolveStyles(`https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css`);
-    require.resolveStyles(`https://use.fontawesome.com/releases/v5.0.13/css/all.css`);
+    dependency.resolveStyles(`https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css`);
+    dependency.resolveStyles(`https://use.fontawesome.com/releases/v5.0.13/css/all.css`);
     await globalComponent(`https://p-rcollaboration.github.io/CoreComponents/src/states/FontIconState.vue`);
     await globalComponent(`https://p-rcollaboration.github.io/CoreComponents/src/views/fontawesome/FontIconView.vue`);
     const AppMenu = await remoteComponent(`AppMenu.vue`);

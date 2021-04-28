@@ -57,7 +57,7 @@ export default {
                         {
                             title: `Loading components`,
                             link: `/loadingcomponents`
-                        }                            
+                        }
                     ]
                 },
                 {
