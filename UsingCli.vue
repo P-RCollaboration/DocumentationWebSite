@@ -55,6 +55,7 @@
         </span>     
         <span>
             ProvueCLI can runned as static webserver. You can specify <b>serverfolder</b> is folder that will be mapped in webserver and <b>host</b> and <b>port</b>. Default is localhost:8080.
+            After it, you need to pass <b>run</b> as an argument in the command line. The web server will be updated file in the build folder after you saved it in IDE or text editor in real-time.
         </span>
     </div>
 </template>
