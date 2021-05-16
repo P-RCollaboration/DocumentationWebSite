@@ -46,12 +46,6 @@
         <span class="code-section">
             Vue2Bootstraper.require = DependencyResolver;
         </span>
-        <span>
-            Bind dependency resolver and bootstraper
-        </span>
-        <span class="code-section">
-            Vue.use(Vue2Bootstraper);
-        </span>
     </div>
 </template>
 
