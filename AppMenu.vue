@@ -165,6 +165,7 @@ export default {
     font-weight: bold;
 }
 .option-container {
+    cursor: pointer;
     padding-left: 4px;
     font-size: 0.9rem;
     user-select: none;
