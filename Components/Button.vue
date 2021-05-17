@@ -4,7 +4,7 @@
             ButtonState
         </span>
         <span class="main-subheader-title">
-            The button is a simple rectangle block that can be pressed and after it, something happens.
+            The button is often rectangle block that can be pressed and after it, something happens.
         </span>
         <span class="main-accentheader-title">
             Props
@@ -20,6 +20,12 @@
         </span>
         <span>
             <b>click(Event)</b> <i>(void)</i> the method needs a call after the button is pressed.
+        </span>
+        <span class="main-accentheader-title">
+            Emits
+        </span>
+        <span>
+            <b>clicked(Event)</b> called after method <b>click</b> was called and <b>disable</b> property is false.
         </span>
     </div>
 </template>
