@@ -65,7 +65,8 @@ export default {
                     opened: false,
                     options: [
                         {
-                            title: `Button`
+                            title: `Button`,
+                            link: `/buttons`
                         },
                         {
                             title: `RadioButton`
