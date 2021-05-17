@@ -23,9 +23,9 @@
         </span>
         <div class="code-section">
             {<br />
-                &quot;sourceFolder&quot;: &quot;src&quot;,<br />
-                &quot;buildFolder&quot;: &quot;build&quot;,<br />
-                &quot;releaseFolder&quot;: &quot;release&quot;<br />
+                &nbsp;&nbsp;&quot;sourceFolder&quot;: &quot;src&quot;,<br />
+                &nbsp;&nbsp;&quot;buildFolder&quot;: &quot;build&quot;,<br />
+                &nbsp;&nbsp;&quot;releaseFolder&quot;: &quot;release&quot;<br />
             }
         </div>
         <span class="main-accentheader-title">
