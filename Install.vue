@@ -11,19 +11,37 @@
         </span>
         <span>
             For work with Provue you need first install <a href="https://vuejs.org/">Vue.js</a>.
-            Currently supported only Vue.js 2.6.0+. Supporting Vue.js 3 is coming soon.
+            Currently supported Vue.js 2 and 3.
         </span>
         <span>
             You can install vue via npm:
         </span>
-        <div class="code-section">
+        <span>
+            For Vue.js 2
+        </span>
+        <div class="code-section">            
             <span>&gt; npm i vue</span>
+        </div>
+        <span>
+            For Vue.js 3
+        </span>
+        <div class="code-section">            
+            <span>&gt; npm i vue@next</span>
         </div>
         <span>
             or via cdn:
         </span>
+        <span>
+            For Vue.js 2
+        </span>
         <div class="code-section">
             <span>&lt;script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"&gt;&lt;/script&gt;</span>
+        </div>
+        <span>
+            For Vue.js 3
+        </span>
+        <div class="code-section">
+            <span>&lt;script src="https://unpkg.com/vue@next"&gt;&lt;/script&gt;</span>
         </div>
         <span class="main-accentheader-title">
             Bootstraper and dependency resolver
@@ -32,7 +50,7 @@
             Bootstraper contains functionality for simplification loading component dynamically.
         </span>
         <span class="code-section">
-            <span>&lt;script src="https://p-rcollaboration.github.io/CoreComponents/src/libraries/vuejs2.boostraper.js"&gt;&lt;/script&gt;</span>
+            <span>&lt;script src="https://p-rcollaboration.github.io/CoreComponents/src/libraries/vuejs.bootstraper.js"&gt;&lt;/script&gt;</span>
         </span>
         <span>
             Dependency resolver it library for loading scripts and styles
@@ -44,20 +62,14 @@
             Bind dependency resolver and bootstraper
         </span>
         <span class="code-section">
-            Vue2Bootstraper.require = DependencyResolver;
+            VueBootstraper.require = DependencyResolver;
         </span>
     </div>
 </template>
 
 <script>
-export default async function () {
-    return {
-        name: `Introduction`,
-        methods: {
-        },
-        components: {
-        }
-    }
+export default {
+    name: `Introduction`
 }
 </script>
 
