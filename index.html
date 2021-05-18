@@ -2,7 +2,7 @@
     <head>
         <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
         <!-- <script src="vue.js"></script> -->
-        <script src="https://p-rcollaboration.github.io/CoreComponents/src/libraries/vuejs2.boostraper.js"></script>
+        <script src="https://p-rcollaboration.github.io/CoreComponents/src/libraries/vuejs.bootstraper.js"></script>
         <script src="https://p-rcollaboration.github.io/CoreComponents/src/libraries/resolveDependencies.js"></script>
         <script src="https://unpkg.com/vue-router@2.0.0/dist/vue-router.js"></script>
     </head>
@@ -12,7 +12,7 @@
 
         <script>
             //setup require dependency for components
-            Vue2Bootstraper.require = DependencyResolver;
+            VueBootstraper.require = DependencyResolver;
 
             const router = new VueRouter(
                 {
@@ -20,23 +20,23 @@
                         {
                             path: `/introduction`,
                             alias: `/`,
-                            component: () => Vue2Bootstraper.loadComponent(`Introduction.vue`)
+                            component: () => VueBootstraper.loadComponent(`Introduction.vue`)
                         },
                         {
                             path: `/install`,
-                            component: () => Vue2Bootstraper.loadComponent(`Install.vue`)
+                            component: () => VueBootstraper.loadComponent(`Install.vue`)
                         },
                         {
                             path: `/loadingcomponents`,
-                            component: () => Vue2Bootstraper.loadComponent(`LoadingComponents.vue`)
+                            component: () => VueBootstraper.loadComponent(`LoadingComponents.vue`)
                         },
                         {
                             path: `/usingcli`,
-                            component: () => Vue2Bootstraper.loadComponent(`UsingCli.vue`)
+                            component: () => VueBootstraper.loadComponent(`UsingCli.vue`)
                         },
                         {
                             path: `/buttons`,
-                            component: () => Vue2Bootstraper.loadComponent(`Components/Button.vue`)
+                            component: () => VueBootstraper.loadComponent(`Components/Button.vue`)
                         },
                     ]
                 }
@@ -49,7 +49,7 @@
                     template: `<app></app>`,
                     router,
                     components: {
-                        App: () => Vue2Bootstraper.loadComponent(`App.vue`)
+                        App: () => VueBootstraper.loadComponent(`App.vue`)
                     }
                 }
             );
