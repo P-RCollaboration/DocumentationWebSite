@@ -57,6 +57,10 @@ export default {
                         {
                             title: `Loading components`,
                             link: `/loadingcomponents`
+                        },
+                        {
+                            title: `Using Vue.js 3 features`,
+                            link: `/vue3features`
                         }
                     ]
                 },
@@ -69,31 +73,40 @@ export default {
                             link: `/buttons`
                         },
                         {
-                            title: `RadioButton`
+                            title: `RadioButton`,
+                            link: `/radiobutton`
                         },
                         {
-                            title: `FontIcon`
+                            title: `FontIcon`,
+                            link: `/fonticon`
                         },
                         {
-                            title: `DropDown`
+                            title: `DropDown`,
+                            link: `/dropdown`
                         },
                         {
-                            title: `CheckBox`
+                            title: `CheckBox`,
+                            link: `/checkbox`
                         },
                         {
-                            title: `CheckBoxTriState`
+                            title: `CheckBoxTriState`,
+                            link: `/checkboxtristate`
                         },
                         {
-                            title: `TextBox`
+                            title: `TextBox`,
+                            link: `/textbox`
                         },
                         {
-                            title: `NumberBox`
+                            title: `NumberBox`,
+                            link: `/numberbox`
                         },
                         {
-                            title: `TextArea`
+                            title: `TextArea`,
+                            link: `/textarea`
                         },
                         {
-                            title: `Slider`
+                            title: `Slider`,
+                            link: `/slider`
                         },
                     ]
                 },
