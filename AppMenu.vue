@@ -59,7 +59,7 @@ export default {
                             link: `/loadingcomponents`
                         },
                         {
-                            title: `Using Vue.js 3 features`,
+                            title: `Using Vue.js 3`,
                             link: `/vue3features`
                         }
                     ]

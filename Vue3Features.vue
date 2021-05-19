@@ -1,7 +1,7 @@
 <template>
     <div class="vue3features-container">
         <span class="main-header-title">
-            How to use Vue.js 3 features (like Composition api ans so on)?
+            How to use Vue.js 3 features (like Composition api and so on)?
         </span>
         <span class="main-subheader-title">
             Many Vue.js 3 features a contains in vue module and created Vue application. But how to get reference to it?
