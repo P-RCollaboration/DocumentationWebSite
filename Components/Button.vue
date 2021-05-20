@@ -32,7 +32,7 @@
 
 <script>
 export default {
-    name: `LoadingComponents`
+    name: `Button`
 }
 </script>
 
