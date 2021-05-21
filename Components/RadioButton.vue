@@ -1,5 +1,5 @@
 <template>
-    <div class="button-components-container">
+    <div class="radio-button-components-container">
         <span class="main-header-title">
             RadioButtonsState
         </span>
